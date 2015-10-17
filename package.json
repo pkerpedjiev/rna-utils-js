@@ -1,0 +1,52 @@
+{
+  "name": "rna-utils-js",
+  "description": "Utilities for working with RNA secondary structure.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pkerpedjiev/rna-utils-js",
+  "author": {
+    "name": "Peter Kerpedjiev",
+    "email": "pkerpedjiev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pkerpedjiev/rna-utils-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pkerpedjiev/rna-utils-js/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/pkerpedjiev/rna-utils-js/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+		"test": "gulp test",
+		"build": "gulp build",
+		"build-browser": "gulp build-browser",
+		"build-browser-min": "gulp build-browser-gzip",
+		"install": "gulp build",
+		"watch": "gulp watch",
+		"test-watch": "gulp test-watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+		"mkdirp": "^0.5.0",
+		"browserify": "6.x",
+		"gulp-jshint": "1.x",
+		"chai": "1.x",
+		"mocha": "1.x",
+		"gulp-mocha": "1.x",
+		"del": "^0.1.3",
+		"gulp": "^3.8.8",
+		"gulp-chmod": "^1.1.1",
+		"gulp-gzip": "^0.0.8",
+		"gulp-rename": "^1.2.0",
+		"gulp-streamify": "^0.0.5",
+		"gulp-uglify": "^1.0.1",
+		"gulp-util": "^3.0.1",
+		"vinyl-source-stream": "^1.0.0"
+  }, 
+  "keywords": ["rna","rna secondary structure","bioinformatics","biojs"]
+}
