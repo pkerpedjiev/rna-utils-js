@@ -10,23 +10,35 @@ Install the module with: `npm install rna-utils-js`
 
 ```javascript
 var rnaUtils = require('rna-utils-js');
-js.hello("biojs"); // "hello biojs"
+rnaUtils.dotbracketToPairtable("biojs"); // "hello biojs"
 ```
 
 ## Documentation
 
-#### .hello(name)
+#### .dotbracketToPairtable(dotbracketString)
 
-**Parameter**: `name`
+**Parameter**: `dotbracketString`
 **Type**: `String`
-**Example**: `biojs`
+**Example**: `((...))`
 
-The 'hello' method is responsible for showing a name.
-
-How to use this method
+Convert a dotbracket string to a pairtable.
 
 ```javascript
-js.hello('biojs'); // "hello biojs"
+rnautilsjs.dotbracketToPairtable('((...))');
+//[7,76,0,0,0,2,1]
+```
+
+#### .pairtableToDotbracket(pairtable)
+
+**Parameter**: `pairtable`
+**Type**: `Array`
+**Example**: `[7,7,6,0,0,0,2,1]`
+
+Convert a pairtable to a dotbracket string.
+
+```javascript
+rnautilsjs.pairtableToDotbracket([7,7,6,0,0,0,2,1]);
+//((...))
 ```
 
 ## Contributing
